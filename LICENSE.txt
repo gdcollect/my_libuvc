@@ -1,7 +1,6 @@
 Software License Agreement (BSD License)
 
-
-Changes since 2018 09 26 : Copyright (C) 2018 Eric Bachard
+Changes since 2018 09 26 : Copyright (C) 2018 Eric Bachard for points 1. to 3.
 
 This includes :
 
@@ -15,10 +14,12 @@ logitech_hd_pro_920.txt
 
 3. all commits since 2018 09 26
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-Original Copyright (C) 2010-2015 Ken Tossell
+Original Copyright (C) 2010-2015 Ken Tossell : 
 
-All rights reserved.
+All rights reserved for everything copied from https://github.com/ktossell/libuvc before the date : 2018 09 27
+
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions
