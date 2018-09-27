@@ -1,6 +1,23 @@
 Software License Agreement (BSD License)
 
-Copyright (C) 2010-2015 Ken Tossell
+
+Changes since 2018 09 26 : Copyright (C) 2018 Eric Bachard
+
+This includes :
+
+1. all files in Documentation directory 
+2. the following files :
+asus_Zenbook_UX410UAR_1.0_builtin_chicony_USB2.0_HD_UVC_webcam.txt
+microsoft_Lifecam_HD-3000.txt
+logitech_brio_4K_stream_edition.txt
+logitech_C922_Pro_Stream_Webcam.txt
+logitech_hd_pro_920.txt
+
+3. all commits since 2018 09 26
+
+
+Original Copyright (C) 2010-2015 Ken Tossell
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
