@@ -1,0 +1,240 @@
+[39068.036757] usb 1-1: new high-speed USB device number 10 using xhci_hcd
+[39068.187623] usb 1-1: New USB device found, idVendor=046d, idProduct=086b
+[39068.187625] usb 1-1: New USB device strings: Mfr=0, Product=2, SerialNumber=3
+[39068.187626] usb 1-1: Product: BRIO 4K Stream Edition
+[39068.187627] usb 1-1: SerialNumber: (hidden for privacy reasons. Should read an 8 digits value instead)
+[39068.188067] uvcvideo: Found UVC 1.00 device BRIO 4K Stream Edition (046d:086b)
+[39068.188500] uvcvideo 1-1:1.0: Entity type for entity Processing 3 was not initialized!
+[39068.188501] uvcvideo 1-1:1.0: Entity type for entity Extension 14 was not initialized!
+[39068.188502] uvcvideo 1-1:1.0: Entity type for entity Extension 6 was not initialized!
+[39068.188503] uvcvideo 1-1:1.0: Entity type for entity Extension 8 was not initialized!
+[39068.188503] uvcvideo 1-1:1.0: Entity type for entity Extension 9 was not initialized!
+[39068.188504] uvcvideo 1-1:1.0: Entity type for entity Extension 10 was not initialized!
+[39068.188527] uvcvideo 1-1:1.0: Entity type for entity Extension 11 was not initialized!
+[39068.188528] uvcvideo 1-1:1.0: Entity type for entity Camera 1 was not initialized!
+[39068.188619] input: BRIO 4K Stream Edition as /devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/input/input42
+[39068.194569] usb 1-1: current rate 16000 is different from the runtime rate 24000
+[39068.198186] usb 1-1: current rate 16000 is different from the runtime rate 32000
+[39068.201244] usb 1-1: current rate 16000 is different from the runtime rate 48000
+[39068.468047] usb 1-1: current rate 16000 is different from the runtime rate 48000
+[39068.476370] usb 1-1: current rate 16000 is different from the runtime rate 48000
+[39068.476548] [UFW BLOCK] IN=wlp2s0 OUT= MAC= SRC=fe80:0000:0000:0000:8270:23ba:721b:3763 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=64 TC=0 HOPLIMIT=1 FLOWLBL=98131 PROTO=UDP SPT=8612 DPT=8612 LEN=24 
+[39068.476561] [UFW BLOCK] IN=wlp2s0 OUT= MAC= SRC=fe80:0000:0000:0000:8270:23ba:721b:3763 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=64 TC=0 HOPLIMIT=1 FLOWLBL=760847 PROTO=UDP SPT=8612 DPT=8610 LEN=24 
+[39068.486707] [UFW BLOCK] IN=wlp2s0 OUT= MAC= SRC=fe80:0000:0000:0000:8270:23ba:721b:3763 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=64 TC=0 HOPLIMIT=1 FLOWLBL=98131 PROTO=UDP SPT=8612 DPT=8612 LEN=24 
+[39068.486718] [UFW BLOCK] IN=wlp2s0 OUT= MAC= SRC=fe80:0000:0000:0000:8270:23ba:721b:3763 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=64 TC=0 HOPLIMIT=1 FLOWLBL=760847 PROTO=UDP SPT=8612 DPT=8610 LEN=24 
+[39083.957697] i2c_hid i2c-ELAN1200:00: i2c_hid_get_input: incomplete report (16/65535)
+[39366.041315] i2c_hid i2c-ELAN1200:00: i2c_hid_get_input: incomplete report (16/65535)
+[39479.177066] i2c_hid i2c-ELAN1200:00: i2c_hid_get_input: incomplete report (16/65535)
+[39679.919895] usb 1-1: USB disconnect, device number 10
+[39679.945852] [UFW BLOCK] IN=wlp2s0 OUT= MAC= SRC=fe80:0000:0000:0000:8270:23ba:721b:3763 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=64 TC=0 HOPLIMIT=1 FLOWLBL=98131 PROTO=UDP SPT=8612 DPT=8612 LEN=24 
+[39679.945865] [UFW BLOCK] IN=wlp2s0 OUT= MAC= SRC=fe80:0000:0000:0000:8270:23ba:721b:3763 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=64 TC=0 HOPLIMIT=1 FLOWLBL=760847 PROTO=UDP SPT=8612 DPT=8610 LEN=24 
+[39679.955994] [UFW BLOCK] IN=wlp2s0 OUT= MAC= SRC=fe80:0000:0000:0000:8270:23ba:721b:3763 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=64 TC=0 HOPLIMIT=1 FLOWLBL=98131 PROTO=UDP SPT=8612 DPT=8612 LEN=24 
+[39679.956004] [UFW BLOCK] IN=wlp2s0 OUT= MAC= SRC=fe80:0000:0000:0000:8270:23ba:721b:3763 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=64 TC=0 HOPLIMIT=1 FLOWLBL=760847 PROTO=UDP SPT=8612 DPT=8610 LEN=24 
+[39686.290580] usbcore: deregistering interface driver uvcvideo
+[39730.487466] uvcvideo: Found UVC 1.00 device USB2.0 HD UVC WebCam (04f2:b57a)
+[39730.487467] uvcvideo: Forcing device quirks to 0x208 by module parameter for testing purpose.
+[39730.487467] uvcvideo: Please report required quirks to the linux-uvc-devel mailing list.
+[39730.493459] uvcvideo 1-6:1.0: Entity type for entity Realtek Extended Controls Unit was not initialized!
+[39730.493461] uvcvideo 1-6:1.0: Entity type for entity Extension 4 was not initialized!
+[39730.493462] uvcvideo 1-6:1.0: Entity type for entity Processing 2 was not initialized!
+[39730.493463] uvcvideo 1-6:1.0: Entity type for entity Camera 1 was not initialized!
+[39730.493628] usbcore: registered new interface driver uvcvideo
+[39730.493629] USB Video Class driver (1.1.1)
+[39744.376028] usb 2-1: new SuperSpeed USB device number 12 using xhci_hcd
+[39744.398257] usb 2-1: New USB device found, idVendor=046d, idProduct=086b
+[39744.398259] usb 2-1: New USB device strings: Mfr=0, Product=2, SerialNumber=3
+[39744.398260] usb 2-1: Product: BRIO 4K Stream Edition
+[39744.398261] usb 2-1: SerialNumber: (hidden for privacy reasons. Should read an 8 digits value instead)
+[39744.399102] uvcvideo: Probing generic UVC device 1
+[39744.399105] uvcvideo: Found format YUV 4:2:2 (YUYV).
+[39744.399106] uvcvideo: - 640x480 (30.0 fps)
+[39744.399106] uvcvideo: - 160x120 (30.0 fps)
+[39744.399107] uvcvideo: - 176x144 (30.0 fps)
+[39744.399107] uvcvideo: - 320x180 (30.0 fps)
+[39744.399108] uvcvideo: - 320x240 (30.0 fps)
+[39744.399108] uvcvideo: - 352x288 (30.0 fps)
+[39744.399109] uvcvideo: - 340x340 (30.0 fps)
+[39744.399109] uvcvideo: - 424x240 (30.0 fps)
+[39744.399110] uvcvideo: - 440x440 (30.0 fps)
+[39744.399110] uvcvideo: - 480x270 (30.0 fps)
+[39744.399110] uvcvideo: - 640x360 (30.0 fps)
+[39744.399111] uvcvideo: - 800x448 (30.0 fps)
+[39744.399111] uvcvideo: - 800x600 (30.0 fps)
+[39744.399112] uvcvideo: - 848x480 (30.0 fps)
+[39744.399112] uvcvideo: - 960x540 (30.0 fps)
+[39744.399113] uvcvideo: - 1024x576 (30.0 fps)
+[39744.399113] uvcvideo: - 1280x720 (30.0 fps)
+[39744.399114] uvcvideo: - 1600x896 (30.0 fps)
+[39744.399114] uvcvideo: - 1920x1080 (30.0 fps)
+[39744.399114] uvcvideo: Found format MJPEG.
+[39744.399115] uvcvideo: - 640x480 (60.0 fps)
+[39744.399115] uvcvideo: - 160x120 (30.0 fps)
+[39744.399116] uvcvideo: - 176x144 (30.0 fps)
+[39744.399116] uvcvideo: - 320x180 (30.0 fps)
+[39744.399117] uvcvideo: - 320x240 (30.0 fps)
+[39744.399117] uvcvideo: - 352x288 (30.0 fps)
+[39744.399118] uvcvideo: - 424x240 (30.0 fps)
+[39744.399118] uvcvideo: - 480x270 (30.0 fps)
+[39744.399118] uvcvideo: - 640x360 (30.0 fps)
+[39744.399119] uvcvideo: - 800x448 (30.0 fps)
+[39744.399119] uvcvideo: - 800x600 (30.0 fps)
+[39744.399120] uvcvideo: - 848x480 (30.0 fps)
+[39744.399120] uvcvideo: - 960x540 (30.0 fps)
+[39744.399121] uvcvideo: - 1024x576 (30.0 fps)
+[39744.399121] uvcvideo: - 1280x720 (60.0 fps)
+[39744.399122] uvcvideo: - 1600x896 (30.0 fps)
+[39744.399122] uvcvideo: - 1920x1080 (30.0 fps)
+[39744.399123] uvcvideo: - 2560x1440 (30.0 fps)
+[39744.399123] uvcvideo: - 3840x2160 (30.0 fps)
+[39744.399123] uvcvideo: - 4096x2160 (30.0 fps)
+[39744.399124] uvcvideo: Found format YUV 4:2:0 (NV12).
+[39744.399124] uvcvideo: - 640x480 (30.0 fps)
+[39744.399125] uvcvideo: - 640x360 (30.0 fps)
+[39744.399125] uvcvideo: - 1280x720 (30.0 fps)
+[39744.399126] uvcvideo: - 1920x1080 (30.0 fps)
+[39744.399151] uvcvideo: Found UVC 1.00 device BRIO 4K Stream Edition (046d:086b)
+[39744.399151] uvcvideo: Forcing device quirks to 0x208 by module parameter for testing purpose.
+[39744.399152] uvcvideo: Please report required quirks to the linux-uvc-devel mailing list.
+[39744.399156] uvcvideo: Added control 00000000-0000-0000-0000-000000000001/2 to device 1 entity 1
+[39744.399157] uvcvideo: Adding mapping 'Exposure, Auto' to control 00000000-0000-0000-0000-000000000001/2.
+[39744.399158] uvcvideo: Added control 00000000-0000-0000-0000-000000000001/3 to device 1 entity 1
+[39744.399159] uvcvideo: Adding mapping 'Exposure, Auto Priority' to control 00000000-0000-0000-0000-000000000001/3.
+[39744.399160] uvcvideo: Added control 00000000-0000-0000-0000-000000000001/4 to device 1 entity 1
+[39744.399161] uvcvideo: Adding mapping 'Exposure (Absolute)' to control 00000000-0000-0000-0000-000000000001/4.
+[39744.399162] uvcvideo: Added control 00000000-0000-0000-0000-000000000001/6 to device 1 entity 1
+[39744.399163] uvcvideo: Adding mapping 'Focus (absolute)' to control 00000000-0000-0000-0000-000000000001/6.
+[39744.399164] uvcvideo: Added control 00000000-0000-0000-0000-000000000001/11 to device 1 entity 1
+[39744.399165] uvcvideo: Adding mapping 'Zoom, Absolute' to control 00000000-0000-0000-0000-000000000001/11.
+[39744.399166] uvcvideo: Added control 00000000-0000-0000-0000-000000000001/13 to device 1 entity 1
+[39744.399168] uvcvideo: Adding mapping 'Pan (Absolute)' to control 00000000-0000-0000-0000-000000000001/13.
+[39744.399168] uvcvideo: Adding mapping 'Tilt (Absolute)' to control 00000000-0000-0000-0000-000000000001/13.
+[39744.399169] uvcvideo: Added control 00000000-0000-0000-0000-000000000001/8 to device 1 entity 1
+[39744.399170] uvcvideo: Adding mapping 'Focus, Auto' to control 00000000-0000-0000-0000-000000000001/8.
+[39744.399171] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/2 to device 1 entity 3
+[39744.399172] uvcvideo: Adding mapping 'Brightness' to control 00000000-0000-0000-0000-000000000101/2.
+[39744.399173] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/3 to device 1 entity 3
+[39744.399174] uvcvideo: Adding mapping 'Contrast' to control 00000000-0000-0000-0000-000000000101/3.
+[39744.399175] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/7 to device 1 entity 3
+[39744.399177] uvcvideo: Adding mapping 'Saturation' to control 00000000-0000-0000-0000-000000000101/7.
+[39744.399178] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/8 to device 1 entity 3
+[39744.399179] uvcvideo: Adding mapping 'Sharpness' to control 00000000-0000-0000-0000-000000000101/8.
+[39744.399180] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/10 to device 1 entity 3
+[39744.399181] uvcvideo: Adding mapping 'White Balance Temperature' to control 00000000-0000-0000-0000-000000000101/10.
+[39744.399181] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/1 to device 1 entity 3
+[39744.399182] uvcvideo: Adding mapping 'Backlight Compensation' to control 00000000-0000-0000-0000-000000000101/1.
+[39744.399183] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/4 to device 1 entity 3
+[39744.399184] uvcvideo: Adding mapping 'Gain' to control 00000000-0000-0000-0000-000000000101/4.
+[39744.399185] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/5 to device 1 entity 3
+[39744.399186] uvcvideo: Adding mapping 'Power Line Frequency' to control 00000000-0000-0000-0000-000000000101/5.
+[39744.399187] uvcvideo: Added control 00000000-0000-0000-0000-000000000101/11 to device 1 entity 3
+[39744.399187] uvcvideo: Adding mapping 'White Balance Temperature, Auto' to control 00000000-0000-0000-0000-000000000101/11.
+[39744.399189] uvcvideo: Scanning UVC chain: OT 4 <- PU 3 (-> XU 14 XU 6 XU 8 XU 9 XU 10 XU 11) <- IT 1
+[39744.399194] uvcvideo: Found a valid video chain (1 -> 4).
+[39744.399950] uvcvideo 2-1:1.0: Entity type for entity Processing 3 was not initialized!
+[39744.399952] uvcvideo 2-1:1.0: Entity type for entity Extension 14 was not initialized!
+[39744.399953] uvcvideo 2-1:1.0: Entity type for entity Extension 6 was not initialized!
+[39744.399954] uvcvideo 2-1:1.0: Entity type for entity Extension 8 was not initialized!
+[39744.399954] uvcvideo 2-1:1.0: Entity type for entity Extension 9 was not initialized!
+[39744.399955] uvcvideo 2-1:1.0: Entity type for entity Extension 10 was not initialized!
+[39744.399956] uvcvideo 2-1:1.0: Entity type for entity Extension 11 was not initialized!
+[39744.399957] uvcvideo 2-1:1.0: Entity type for entity Camera 1 was not initialized!
+[39744.400040] uvcvideo: UVC device initialized.
+[39744.406216] usb 2-1: current rate 16000 is different from the runtime rate 24000
+[39744.409554] usb 2-1: current rate 16000 is different from the runtime rate 32000
+[39744.412957] usb 2-1: current rate 16000 is different from the runtime rate 48000
+[39744.416701] input: BRIO 4K Stream Edition as /devices/pci0000:00/0000:00:14.0/usb2/2-1/2-1:1.4/0003:046D:086B.000C/input/input43
+[39744.476257] hid-generic 0003:046D:086B.000C: input,hidraw1: USB HID v1.11 Device [BRIO 4K Stream Edition] on usb-0000:00:14.0-1/input4
+[39744.716794] uvcvideo: Resuming interface 0
+[39744.716795] uvcvideo: Resuming interface 1
+[39744.732899] uvcvideo: uvc_v4l2_open
+[39744.732945] uvcvideo: uvc_v4l2_release
+[39744.736917] uvcvideo: uvc_v4l2_open
+[39744.736924] uvcvideo: uvc_v4l2_release
+[39744.736991] uvcvideo: uvc_v4l2_open
+[39744.740457] uvcvideo: uvc_v4l2_release
+[39744.740472] uvcvideo: uvc_v4l2_open
+[39744.740476] uvcvideo: uvc_v4l2_release
+[39744.740523] uvcvideo: uvc_v4l2_open
+[39744.740542] uvcvideo: uvc_v4l2_release
+[39744.741275] uvcvideo: uvc_v4l2_open
+[39744.741552] uvcvideo: XU control ffe52d21-8030-4e2c-82d9-f587d00540bd/9 queried: len 5, flags { get 1 set 1 auto 0 }.
+[39744.741553] uvcvideo: Added control ffe52d21-8030-4e2c-82d9-f587d00540bd/9 to device 1 entity 11
+[39744.741554] uvcvideo: Adding mapping 'LED1 Mode' to control ffe52d21-8030-4e2c-82d9-f587d00540bd/9.
+[39744.741564] uvcvideo: Adding mapping 'LED1 Frequency' to control ffe52d21-8030-4e2c-82d9-f587d00540bd/9.
+[39744.741565] uvcvideo: uvc_v4l2_release
+[39744.744509] usb 2-1: current rate 16000 is different from the runtime rate 48000
+[39744.754635] usb 2-1: current rate 16000 is different from the runtime rate 48000
+[39744.754861] [UFW BLOCK] IN=wlp2s0 OUT= MAC= SRC=fe80:0000:0000:0000:8270:23ba:721b:3763 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=64 TC=0 HOPLIMIT=1 FLOWLBL=98131 PROTO=UDP SPT=8612 DPT=8612 LEN=24 
+[39744.754885] [UFW BLOCK] IN=wlp2s0 OUT= MAC= SRC=fe80:0000:0000:0000:8270:23ba:721b:3763 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=64 TC=0 HOPLIMIT=1 FLOWLBL=760847 PROTO=UDP SPT=8612 DPT=8610 LEN=24 
+[39744.765240] [UFW BLOCK] IN=wlp2s0 OUT= MAC= SRC=fe80:0000:0000:0000:8270:23ba:721b:3763 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=64 TC=0 HOPLIMIT=1 FLOWLBL=98131 PROTO=UDP SPT=8612 DPT=8612 LEN=24 
+[39744.765251] [UFW BLOCK] IN=wlp2s0 OUT= MAC= SRC=fe80:0000:0000:0000:8270:23ba:721b:3763 DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=64 TC=0 HOPLIMIT=1 FLOWLBL=760847 PROTO=UDP SPT=8612 DPT=8610 LEN=24 
+[39744.833407] uvcvideo: uvc_v4l2_open
+[39744.833414] uvcvideo: uvc_v4l2_release
+[39744.833421] uvcvideo: uvc_v4l2_open
+[39744.833423] uvcvideo: uvc_v4l2_release
+[39744.833533] uvcvideo: uvc_v4l2_open
+[39744.833534] uvcvideo: uvc_v4l2_release
+[39744.833536] uvcvideo: uvc_v4l2_open
+[39744.833537] uvcvideo: uvc_v4l2_release
+[39744.833609] uvcvideo: uvc_v4l2_open
+[39744.833612] uvcvideo: uvc_v4l2_release
+[39744.833694] uvcvideo: uvc_v4l2_open
+[39744.833697] uvcvideo: uvc_v4l2_release
+[39744.833722] uvcvideo: uvc_v4l2_open
+[39744.833725] uvcvideo: uvc_v4l2_release
+[39744.833820] uvcvideo: uvc_v4l2_open
+[39744.833821] uvcvideo: uvc_v4l2_release
+[39744.833823] uvcvideo: uvc_v4l2_open
+[39744.833825] uvcvideo: uvc_v4l2_release
+[39744.833880] uvcvideo: uvc_v4l2_open
+[39744.833882] uvcvideo: uvc_v4l2_release
+[39744.833960] uvcvideo: uvc_v4l2_open
+[39744.833963] uvcvideo: uvc_v4l2_release
+[39744.833972] uvcvideo: uvc_v4l2_open
+[39744.833974] uvcvideo: uvc_v4l2_release
+[39744.833981] uvcvideo: uvc_v4l2_open
+[39744.833982] uvcvideo: uvc_v4l2_release
+[39744.833987] uvcvideo: uvc_v4l2_open
+[39744.833989] uvcvideo: uvc_v4l2_release
+[39744.834105] uvcvideo: uvc_v4l2_open
+[39744.834106] uvcvideo: uvc_v4l2_release
+[39744.834112] uvcvideo: uvc_v4l2_open
+[39744.834115] uvcvideo: uvc_v4l2_release
+[39744.983507] uvcvideo: uvc_v4l2_open
+[39744.983511] uvcvideo: uvc_v4l2_release
+[39744.983522] uvcvideo: uvc_v4l2_open
+[39744.983524] uvcvideo: uvc_v4l2_release
+[39744.983833] uvcvideo: uvc_v4l2_open
+[39744.983837] uvcvideo: uvc_v4l2_release
+[39744.984046] uvcvideo: uvc_v4l2_open
+[39744.984050] uvcvideo: uvc_v4l2_release
+[39744.984177] uvcvideo: uvc_v4l2_open
+[39744.984179] uvcvideo: uvc_v4l2_release
+[39744.984185] uvcvideo: uvc_v4l2_open
+[39744.984188] uvcvideo: uvc_v4l2_release
+[39744.984220] uvcvideo: uvc_v4l2_open
+[39744.984221] uvcvideo: uvc_v4l2_release
+[39744.984225] uvcvideo: uvc_v4l2_open
+[39744.984227] uvcvideo: uvc_v4l2_release
+[39745.017483] uvcvideo: uvc_v4l2_open
+[39745.017486] uvcvideo: uvc_v4l2_release
+[39745.017492] uvcvideo: uvc_v4l2_open
+[39745.017493] uvcvideo: uvc_v4l2_release
+[39745.017671] uvcvideo: uvc_v4l2_open
+[39745.017674] uvcvideo: uvc_v4l2_release
+[39745.017896] uvcvideo: uvc_v4l2_open
+[39745.017900] uvcvideo: uvc_v4l2_release
+[39745.017975] uvcvideo: uvc_v4l2_open
+[39745.017976] uvcvideo: uvc_v4l2_release
+[39745.017980] uvcvideo: uvc_v4l2_open
+[39745.017982] uvcvideo: uvc_v4l2_release
+[39745.018035] uvcvideo: uvc_v4l2_open
+[39745.018036] uvcvideo: uvc_v4l2_release
+[39745.018040] uvcvideo: uvc_v4l2_open
+[39745.018041] uvcvideo: uvc_v4l2_release
+[39747.695632] uvcvideo: Suspending interface 1
+[39747.695633] uvcvideo: Suspending interface 0
+[39748.832449] uvcvideo: Resuming interface 0
+[39748.832451] uvcvideo: Resuming interface 1
+[39750.835517] uvcvideo: Suspending interface 1
+[39750.835524] uvcvideo: Suspending interface 0

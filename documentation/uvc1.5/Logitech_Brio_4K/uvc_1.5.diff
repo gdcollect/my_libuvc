@@ -1,0 +1,68 @@
+diff -Naur old/uvc_video.c new/uvc_video.c
+--- old/uvc_video.c	2018-08-28 12:43:37.000000000 +0200
++++ new/uvc_video.c	2018-09-26 23:14:38.176850092 +0200
+@@ -163,16 +163,27 @@
+ 	}
+ }
+ 
++static size_t uvc_video_ctrl_size(struct uvc_streaming *stream)
++{
++	/*
++	 * Return the size of the video probe and commit controls, which depends
++	 * on the protocol version.
++	 */
++	if (stream->dev->uvc_version < 0x0110)
++		return 26;
++	else if (stream->dev->uvc_version < 0x0150)
++		return 34;
++	else
++		return 48;
++}
++
+ static int uvc_get_video_ctrl(struct uvc_streaming *stream,
+ 	struct uvc_streaming_control *ctrl, int probe, __u8 query)
+ {
++	__u16 size = uvc_video_ctrl_size(stream);;
+ 	__u8 *data;
+-	__u16 size;
+ 	int ret;
+ 
+-	size = stream->dev->uvc_version >= 0x0110 ? 34 : 26;
+-	if (stream->dev->uvc_version >= 0x0150)
+-		size = 48;
+ 	if ((stream->dev->quirks & UVC_QUIRK_PROBE_DEF) &&
+ 			query == UVC_GET_DEF)
+ 		return -EIO;
+@@ -227,7 +238,7 @@
+ 	ctrl->dwMaxVideoFrameSize = get_unaligned_le32(&data[18]);
+ 	ctrl->dwMaxPayloadTransferSize = get_unaligned_le32(&data[22]);
+ 
+-	if (size == 34) {
++	if (size >= 34) {
+ 		ctrl->dwClockFrequency = get_unaligned_le32(&data[26]);
+ 		ctrl->bmFramingInfo = data[30];
+ 		ctrl->bPreferedVersion = data[31];
+@@ -256,13 +267,10 @@
+ static int uvc_set_video_ctrl(struct uvc_streaming *stream,
+ 	struct uvc_streaming_control *ctrl, int probe)
+ {
++	__u16 size size = uvc_video_ctrl_size(stream);
+ 	__u8 *data;
+-	__u16 size;
+ 	int ret;
+ 
+-	size = stream->dev->uvc_version >= 0x0110 ? 34 : 26;
+-	if (stream->dev->uvc_version >= 0x0150)
+-		size = 48;
+ 	data = kzalloc(size, GFP_KERNEL);
+ 	if (data == NULL)
+ 		return -ENOMEM;
+@@ -279,7 +287,7 @@
+ 	put_unaligned_le32(ctrl->dwMaxVideoFrameSize, &data[18]);
+ 	put_unaligned_le32(ctrl->dwMaxPayloadTransferSize, &data[22]);
+ 
+-	if (size == 34) {
++	if (size >= 34) {
+ 		put_unaligned_le32(ctrl->dwClockFrequency, &data[26]);
+ 		data[30] = ctrl->bmFramingInfo;
+ 		data[31] = ctrl->bPreferedVersion;
