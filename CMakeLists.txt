@@ -14,10 +14,10 @@ endif()
 option(BUILD_EXAMPLE "Build example program" ON)
 option(BUILD_TEST_PROGRAM "Build test program" ON)
 
-set(libuvc_VERSION_MAJOR 0)
-set(libuvc_VERSION_MINOR 0)
-set(libuvc_VERSION_PATCH 8)
-set(libuvc_VERSION ${libuvc_VERSION_MAJOR}.${libuvc_VERSION_MINOR}.${libuvc_VERSION_PATCH})
+set(my_libuvc_VERSION_MAJOR 0)
+set(my_libuvc_VERSION_MINOR 0)
+set(my_libuvc_VERSION_PATCH 8)
+set(my_libuvc_VERSION ${my_libuvc_VERSION_MAJOR}.${my_libuvc_VERSION_MINOR}.${my_libuvc_VERSION_PATCH})
 
 set(libuvc_DESCRIPTION "A cross-platform library for USB video devices")
 set(libuvc_URL "https://github.com/ebachard/my_libuvc")
@@ -56,8 +56,8 @@ SET(SOURCES src/ctrl.c src/ctrl-gen.c src/device.c src/diag.c
 
 include_directories(
   ${my_libuvc_SOURCE_DIR}/include
-  ${libuvc_SOURCE_DIR}/include
-  ${libuvc_BINARY_DIR}/include
+  ${my_libuvc_SOURCE_DIR}/include
+  ${my_libuvc_BINARY_DIR}/include
   ${LIBUSB_INCLUDE_DIR}
   ${PTHREAD_INCLUDE_DIR}
 )
@@ -94,10 +94,10 @@ configure_file(include/my_libuvc/libuvc_config.h.in
 
 foreach(target_name ${UVC_TARGETS})
   set_target_properties(${target_name} PROPERTIES
-    PUBLIC_HEADER "include/libuvc/libuvc.h;${libuvc_BINARY_DIR}/include/libuvc/libuvc_config.h"  WINDOWS_EXPORT_ALL_SYMBOLS TRUE)
+    PUBLIC_HEADER "include/my_libuvc/libuvc.h;${libuvc_BINARY_DIR}/include/my_libuvc/libuvc_config.h"  WINDOWS_EXPORT_ALL_SYMBOLS TRUE)
   set_target_properties(${target_name} PROPERTIES
-                        VERSION ${libuvc_VERSION}
-                        SOVERSION ${libuvc_VERSION_MAJOR})
+                        VERSION ${my_libuvc_VERSION}
+                        SOVERSION ${my_libuvc_VERSION_MAJOR})
 endforeach()
 
 if(BUILD_UVC_SHARED)
@@ -113,7 +113,7 @@ install(TARGETS ${UVC_TARGETS}
   EXPORT libuvcTargets
   LIBRARY DESTINATION "${CMAKE_INSTALL_PREFIX}/lib"
   ARCHIVE DESTINATION "${CMAKE_INSTALL_PREFIX}/lib"
-  PUBLIC_HEADER DESTINATION "${CMAKE_INSTALL_PREFIX}/include/libuvc"
+  PUBLIC_HEADER DESTINATION "${CMAKE_INSTALL_PREFIX}/include/my_libuvc"
 )
 
 export(TARGETS ${UVC_TARGETS}
