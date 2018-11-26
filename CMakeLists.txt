@@ -89,8 +89,8 @@ if(BUILD_UVC_STATIC)
   list(APPEND UVC_TARGETS my_libuvc_static)
 endif()
 
-configure_file(include/my_libuvc/libuvc_config.h.in
-  ${PROJECT_BINARY_DIR}/include/my_libuvc/libuvc_config.h @ONLY)
+configure_file(include/my_libuvc/my_libuvc_config.h.in
+  ${PROJECT_BINARY_DIR}/include/my_libuvc/my_libuvc_config.h @ONLY)
 
 foreach(target_name ${UVC_TARGETS})
   set_target_properties(${target_name} PROPERTIES
