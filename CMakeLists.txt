@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-project(libuvc)
+project(my_libuvc)
 
 if (NOT CMAKE_BUILD_TYPE)
   message(STATUS "No build type selected, default to Release")
@@ -127,7 +127,7 @@ configure_file(libuvcConfig.cmake.in ${PROJECT_BINARY_DIR}${CMAKE_FILES_DIRECTOR
 
 configure_file(libuvcConfigVersion.cmake.in ${PROJECT_BINARY_DIR}/libuvcConfigVersion.cmake @ONLY)
 
-configure_file(libuvc.pc.in ${PROJECT_BINARY_DIR}/libuvc.pc @ONLY)
+configure_file(my_libuvc.pc.in ${PROJECT_BINARY_DIR}/my_libuvc.pc @ONLY)
 
 install(FILES
   "${PROJECT_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/libuvcConfig.cmake"
@@ -138,6 +138,6 @@ install(EXPORT libuvcTargets
   DESTINATION "${INSTALL_CMAKE_DIR}")
 
 install(FILES
-  "${PROJECT_BINARY_DIR}/libuvc.pc"
+  "${PROJECT_BINARY_DIR}/my_libuvc.pc"
   DESTINATION "${CMAKE_INSTALL_LIBDIR}/pkgconfig"
 )
