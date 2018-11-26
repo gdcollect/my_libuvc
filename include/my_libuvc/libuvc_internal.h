@@ -2,8 +2,8 @@
   * @brief Implementation-specific UVC constants and structures.
   * @cond include_hidden
   */
-#ifndef LIBUVC_INTERNAL_H
-#define LIBUVC_INTERNAL_H
+#ifndef MY_LIBUVC_INTERNAL_H
+#define MY_LIBUVC_INTERNAL_H
 
 #include <assert.h>
 #include <stdlib.h>
@@ -325,6 +325,6 @@ void uvc_start_handler_thread(uvc_context_t *ctx);
 uvc_error_t uvc_claim_if(uvc_device_handle_t *devh, int idx);
 uvc_error_t uvc_release_if(uvc_device_handle_t *devh, int idx);
 
-#endif // !def(LIBUVC_INTERNAL_H)
+#endif // !def(MY_LIBUVC_INTERNAL_H)
 /** @endcond */
 
