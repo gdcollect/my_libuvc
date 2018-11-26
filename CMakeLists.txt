@@ -80,7 +80,7 @@ endif()
 
 if(BUILD_EXAMPLE)
   add_executable(example src/example.c)
-  target_link_libraries(example uvc pthread)
+  target_link_libraries(example my_libuvc pthread)
 endif()
 
 if(BUILD_UVC_STATIC)
