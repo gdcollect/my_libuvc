@@ -1,5 +1,5 @@
-#ifndef LIBUVC_H
-#define LIBUVC_H
+#ifndef MY_LIBUVC_H
+#define MY_LIBUVC_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -12,7 +12,7 @@ extern "C" {
 #else
 #include <winsock.h>
 #endif
-#include <libuvc/libuvc_config.h>
+#include <my_libuvc/libuvc_config.h>
 
 struct libusb_context;
 struct libusb_device_handle;
