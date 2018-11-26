@@ -1,0 +1,22 @@
+#ifndef MY_LIBUVC_CONFIG_H
+#define MY_LIBUVC_CONFIG_H
+
+#define MY_LIBUVC_VERSION_MAJOR @MY_LIBUVC_VERSION_MAJOR@
+#define MY_LIBUVC_VERSION_MINOR @MY_LIBUVC_VERSION_MINOR@
+#define MY_LIBUVC_VERSION_PATCH @MY_LIBUVC_VERSION_PATCH@
+#define MY_LIBUVC_VERSION_STR "@my_MY_LIBUVC_VERSION@"
+#define MY_LIBUVC_VERSION_INT                      \
+  ((@my_MY_LIBUVC_VERSION_MAJOR@ << 16) |             \
+   (@my_MY_LIBUVC_VERSION_MINOR@ << 8) |              \
+   (@my_MY_LIBUVC_VERSION_PATCH@))
+
+/** @brief Test whether MY_LIBUVC is new enough
+ * This macro evaluates true iff the current version is
+ * at least as new as the version specified.
+ */
+#define MY_LIBUVC_VERSION_GTE(major, minor, patch)                         \
+  (MY_LIBUVC_VERSION_INT >= (((major) << 16) | ((minor) << 8) | (patch)))
+
+#cmakedefine MY_LIBUVC_HAS_JPEG 1
+
+#endif // !def(MY_LIBUVC_CONFIG_H)
