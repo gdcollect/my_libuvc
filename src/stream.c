@@ -287,6 +287,21 @@ uvc_error_t uvc_stream_ctrl(uvc_stream_handle_t *strmh, uvc_stream_ctrl_t *ctrl)
   return UVC_SUCCESS;
 }
 
+/** @brief Gets current stream control block
+ * @ingroup streaming
+ * Author  jksiezni
+ * https://github.com/jksiezni/libuvc/commit/939da80107732f3410f4de9331f5b1bd863cc7b6
+ *
+ * This may be executed whether or not the stream is running.
+ *
+ * @param[in] strmh Stream handle
+ * @param[out] ctrl Current control block
+ */
+uvc_error_t uvc_stream_get_current_ctrl(uvc_stream_handle_t *strmh, uvc_stream_ctrl_t *ctrl) {
+    *ctrl = strmh->cur_ctrl;
+    return UVC_SUCCESS;
+}
+
 /** @internal
  * @brief Find the descriptor for a specific frame configuration
  * @param stream_if Stream interface
@@ -315,6 +330,8 @@ uvc_frame_desc_t *uvc_find_frame_desc_stream(uvc_stream_handle_t *strmh,
     uint16_t format_id, uint16_t frame_id) {
   return _uvc_find_frame_desc_stream_if(strmh->stream_if, format_id, frame_id);
 }
+
+
 
 /** @internal
  * @brief Find the descriptor for a specific frame configuration
