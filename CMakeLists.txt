@@ -94,7 +94,7 @@ configure_file(include/my_libuvc/my_libuvc_config.h.in
 
 foreach(target_name ${UVC_TARGETS})
   set_target_properties(${target_name} PROPERTIES
-    PUBLIC_HEADER "include/my_libuvc/libuvc.h;${libuvc_BINARY_DIR}/include/my_libuvc/libuvc_config.h"  WINDOWS_EXPORT_ALL_SYMBOLS TRUE)
+    PUBLIC_HEADER "include/my_libuvc/libuvc.h;${my_libuvc_BINARY_DIR}/include/my_libuvc/my_libuvc_config.h"  WINDOWS_EXPORT_ALL_SYMBOLS TRUE)
   set_target_properties(${target_name} PROPERTIES
                         VERSION ${my_libuvc_VERSION}
                         SOVERSION ${my_libuvc_VERSION_MAJOR})
