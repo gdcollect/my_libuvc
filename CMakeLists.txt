@@ -20,7 +20,7 @@ set(libuvc_VERSION_PATCH 8)
 set(libuvc_VERSION ${libuvc_VERSION_MAJOR}.${libuvc_VERSION_MINOR}.${libuvc_VERSION_PATCH})
 
 set(libuvc_DESCRIPTION "A cross-platform library for USB video devices")
-set(libuvc_URL "https://github.com/ktossell/libuvc")
+set(libuvc_URL "https://github.com/ebachard/my_libuvc")
 
 if(WIN32)
 
@@ -55,6 +55,7 @@ SET(SOURCES src/ctrl.c src/ctrl-gen.c src/device.c src/diag.c
            src/misc.c)
 
 include_directories(
+  ${my_libuvc_SOURCE_DIR}/include
   ${libuvc_SOURCE_DIR}/include
   ${libuvc_BINARY_DIR}/include
   ${LIBUSB_INCLUDE_DIR}

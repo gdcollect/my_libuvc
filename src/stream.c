@@ -36,8 +36,8 @@
  * @brief Tools for creating, managing and consuming video streams
  */
 
-#include "libuvc/libuvc.h"
-#include "libuvc/libuvc_internal.h"
+#include "my_libuvc/libuvc.h"
+#include "my_libuvc/libuvc_internal.h"
 #include "errno.h"
 #include "math.h"
 #ifdef __APPLE__

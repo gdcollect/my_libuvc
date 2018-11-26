@@ -1,6 +1,6 @@
 /* This is an AUTO-GENERATED file! Update it with the output of `ctrl-gen.py def`. */
-#include "libuvc/libuvc.h"
-#include "libuvc/libuvc_internal.h"
+#include "my_libuvc/libuvc.h"
+#include "my_libuvc/libuvc_internal.h"
 
 static const int REQ_TYPE_SET = 0x21;
 static const int REQ_TYPE_GET = 0xa1;

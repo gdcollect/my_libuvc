@@ -35,8 +35,8 @@
 /**
  * @defgroup frame Frame processing
  */
-#include "libuvc/libuvc.h"
-#include "libuvc/libuvc_internal.h"
+#include "my_libuvc/libuvc.h"
+#include "my_libuvc/libuvc_internal.h"
 #include <jpeglib.h>
 #include <setjmp.h>
 

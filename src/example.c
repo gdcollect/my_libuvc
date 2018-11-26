@@ -1,4 +1,4 @@
-#include "libuvc/libuvc.h"
+#include "my_libuvc/libuvc.h"
 #include <stdio.h>
 #include <unistd.h>
 

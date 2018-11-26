@@ -35,7 +35,7 @@
 #include <unistd.h>
 #include <opencv/highgui.h>
 
-#include "libuvc/libuvc.h"
+#include "my_libuvc/libuvc.h"
 
 void cb(uvc_frame_t *frame, void *ptr) {
   uvc_frame_t *bgr;
