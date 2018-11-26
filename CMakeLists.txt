@@ -74,8 +74,8 @@ else()
 endif()
 
 if(BUILD_UVC_SHARED)
-  add_library(uvc SHARED ${SOURCES})
-  list(APPEND UVC_TARGETS uvc)
+  add_library(my_libuvc SHARED ${SOURCES})
+  list(APPEND UVC_TARGETS my_libuvc)
 endif()
 
 if(BUILD_EXAMPLE)
@@ -84,9 +84,9 @@ if(BUILD_EXAMPLE)
 endif()
 
 if(BUILD_UVC_STATIC)
-  add_library(uvc_static STATIC ${SOURCES})
-  set_target_properties(uvc_static PROPERTIES OUTPUT_NAME uvc)
-  list(APPEND UVC_TARGETS uvc_static)
+  add_library(my_libuvc_static STATIC ${SOURCES})
+  set_target_properties(my_libuvc_static PROPERTIES OUTPUT_NAME my_libuvc)
+  list(APPEND UVC_TARGETS my_libuvc_static)
 endif()
 
 configure_file(include/my_libuvc/libuvc_config.h.in
@@ -101,10 +101,10 @@ foreach(target_name ${UVC_TARGETS})
 endforeach()
 
 if(BUILD_UVC_SHARED)
-  target_link_libraries(uvc ${LIBUSB_LIBRARIES} ${PTHREAD_LIBRARIES})
+  target_link_libraries(my_libuvc ${LIBUSB_LIBRARIES} ${PTHREAD_LIBRARIES})
   if(BUILD_TEST_PROGRAM)
     add_executable(test src/test.c)
-    target_link_libraries(test uvc ${LIBUSB_LIBRARIES} opencv_highgui
+    target_link_libraries(test my_libuvc ${LIBUSB_LIBRARIES} opencv_highgui
       opencv_core)
   endif()
 endif()
